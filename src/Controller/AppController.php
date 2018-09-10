@@ -27,6 +27,7 @@ use Cake\Event\Event;
  */
 class AppController extends Controller
 {
+    public $viewClass = 'App\View\SmartyView';
 
     /**
      * Initialization hook method.
@@ -51,5 +52,14 @@ class AppController extends Controller
          * see https://book.cakephp.org/3.0/en/controllers/components/security.html
          */
         //$this->loadComponent('Security');
+
+        $this->set([
+            'APP' => 'http://inquiryyy.tk',
+            'ROOT_DIR' => ROOT,
+            'WEBROOT_DIR' => WWW_ROOT,
+            'TEMPLATE_DIR' => ROOT . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'Template'
+        ]);
+
+        $this->viewBuilder()->setLayout(false);
     }
 }

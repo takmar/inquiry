@@ -1,0 +1,4 @@
+/logs/
+/tmp/
+config/.env
+config/app.php

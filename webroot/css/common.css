@@ -1,0 +1,13 @@
+.top-space {
+    margin-top:20px;
+}
+
+.completion-title {
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
